@@ -33,6 +33,46 @@
         });
 
 
+
+    // const catchFiles = async (filenames) => {
+    //     filenames.forEach((file) => {
+    //         //console.log(file.blob())
+    //         return file.blob()
+    //     })
+    // }
+
+    const filenames = [
+        'unsplash.jpg',
+        'unsplash2.jpg',
+        'unsplash3.jpg'
+    ];
+    const catchFiles = async (filenames) => {
+
+        for (let filename of filenames) {
+            const response = await fetch(filename)
+            const blob = await response.blob();
+            return blob
+        }
+    }
+
+    catchFiles(filenames).then(response => {
+        const img = document.createElement('img');
+        img.src = URL.createObjectURL(response);
+        img.width = '200';
+        document.body.append(img)
+        console.log(response)
+    }).then(error => {
+        console.log(error)
+    })
+
+
+    // filenames.forEach(filename => {
+    //     console.log(filename)
+    // })
+
+
+
+
 </script>
 </body>
 </html>
