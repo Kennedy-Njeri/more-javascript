@@ -10,23 +10,27 @@
 <h1>Fetch a Rainbow</h1>
 <img src="" id="rainbow" width="480" />
 <script>
-    console.log('about to fetch a rainbow');
+    //console.log('about to fetch a rainbow');
+
+
+
+    const catchRainbow = async () => {
+        const response = await fetch('rainbow.jpg');
+        const blob = await response.blob();
+        return blob
+        //document.getElementById('rainbow').src = URL.createObjectURL(blob);
+    }
 
     catchRainbow()
         .then(response => {
-            console.log('yay');
+            document.getElementById('rainbow').src = URL.createObjectURL(response)
+            //console.log('yay', response);
+
         })
         .catch(error => {
             console.log('error!');
             console.error(error);
         });
-
-    const catchRainbow = async () => {
-        const response = await fetch('rainbow.jpg');
-        const blob = await response.blob();
-        document.getElementById('rainbow').src = URL.createObjectURL(blob);
-    }
-
 
 
 </script>
