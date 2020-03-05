@@ -112,8 +112,8 @@
         const southern = [];
 
 
-        const response = await fetch('ZonAnn.Ts+dSST.csv')
         //const response = await fetch('ZonAnn.Ts+dSST.csv')
+        const response = await fetch('ZonAnn.Ts+dSST.csv')
         const data = await response.text()
         console.log(data)
         //return data
@@ -126,6 +126,7 @@
             console.log(columns)
             const year = columns[0]
             xs.push(year)
+
             const temp = columns[1]
             ys.push(parseFloat(temp) + 14)
             northern.push(14 + parseFloat(columns[2]));
@@ -134,7 +135,7 @@
 
         })
 
-        return { xs, ys, northern, southern}
+        return { xs, ys, northern, southern }
 
     }
 
