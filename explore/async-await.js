@@ -12,13 +12,13 @@ const add = (a, b) => {
 }
 
 
+
 const  doWork = async () => {
     const sum = await add(-1, 5)
     const sum2 = await add(sum, 5)
     const sum3 = await add(sum2, 6)
     return sum3
 }
-
 
 
 doWork().then((result) => {
