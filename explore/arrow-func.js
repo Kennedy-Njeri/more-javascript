@@ -3,12 +3,13 @@ const square = (x) => {
 
 }
 
+
 console.log(square(2))
 
 const square1 = (x) => x**2
 
-
 console.log(square1(3))
+
 
 
 const event = {
