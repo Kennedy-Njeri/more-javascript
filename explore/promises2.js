@@ -1,6 +1,5 @@
 // Promise Chaining
 
-
 const add = (a, b) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -21,6 +20,7 @@ const add = (a, b) => {
 // }).catch(error => {
 //     console.log(error)
 // })
+
 
 add(4, 6).then((sum) => {
     console.log(sum)
