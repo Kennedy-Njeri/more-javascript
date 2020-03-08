@@ -1,3 +1,4 @@
+
 const fs = require('fs')
 
 // const book = {
@@ -19,12 +20,14 @@ const fs = require('fs')
 // const parsedData = JSON.parse(bookJson)
 // console.log(parsedData.title)
 
+
 // question
 const dataBuffer = fs.readFileSync('json1.json')
 const dataJson = dataBuffer.toString()
 const user = JSON.parse(dataJson)
 
 //console.log(user)
+
 
 user.name = "Owen"
 user.age = 22
