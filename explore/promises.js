@@ -1,3 +1,5 @@
+
+
 const doPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve([7, 4, 1])
