@@ -1,14 +1,14 @@
-setTimeout(() => {
-    console.log("Two seconds are up")
-}, 3000)
-
-const names = ["kev", "joe", "jes", "charity"]
-
-const shortNames = names.filter((name) => {
-    return name.length <= 4
-})
-
-console.log(shortNames)
+// setTimeout(() => {
+//     console.log("Two seconds are up")
+// }, 3000)
+//
+// const names = ["kev", "joe", "jes", "charity"]
+//
+// const shortNames = names.filter((name) => {
+//     return name.length <= 4
+// })
+//
+// console.log(shortNames)
 
 
 // const geoCode = (address, callback) => {
