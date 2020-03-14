@@ -9,18 +9,18 @@ const add = (a, b) => {
     })
 }
 
-add(5, 3).then((sum) => {
-    console.log(sum)
-
-    add(sum, 6).then((sum) => {
-        console.log(sum)
-    }).catch((error) => {
-        console.log(error)
-    })
-
-}).catch(error => {
-    console.log(error)
-})
+// add(5, 3).then((sum) => {
+//     console.log(sum)
+//
+//     add(sum, 6).then((sum) => {
+//         console.log(sum)
+//     }).catch((error) => {
+//         console.log(error)
+//     })
+//
+// }).catch(error => {
+//     console.log(error)
+// })
 
 
 add(4, 6).then((sum) => {
