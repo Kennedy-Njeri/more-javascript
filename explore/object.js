@@ -1,5 +1,6 @@
 
 const name = "Kennedy"
+
 const userAge = 22
 
 const user = {
@@ -18,6 +19,7 @@ const product = {
     stock: 234,
     salePrice: undefined
 }
+
 
 // const { label: productLabel, price, stock, salePrice } = product
 //
