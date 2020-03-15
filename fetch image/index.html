@@ -45,6 +45,7 @@
         'unsplash2.jpg',
         'unsplash3.jpg'
     ];
+
     const catchFiles = async (filenames) => {
 
         for (let filename of filenames) {
@@ -53,6 +54,7 @@
             return blob
         }
     }
+
 
     catchFiles(filenames).then(response => {
         const img = document.createElement('img');
