@@ -35,6 +35,17 @@
 
 <script>
 
+    const url = 'https://api.wheretheiss.at/v1/satellites/25544'
+
+    async function getIss() {
+        const response = await fetch(url)
+        const data = await response.json()
+        const {longitude, latitude} = data
+        console.log(longitude, latitude)
+        document.getElementById('lat').textContent = latitude
+        document.getElementById('lon').textContent = longitude
+    }
+    getIss()
 </script>
 </body>
 </html>
