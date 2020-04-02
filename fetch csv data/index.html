@@ -105,12 +105,13 @@
         const southern = [];
 
 
+        const response = await fetch('testdata.csv')
         //const response = await fetch('ZonAnn.Ts+dSST.csv')
-        const response = await fetch('ZonAnn.Ts+dSST.csv')
         const data = await response.text()
         console.log(data)
         //return data
 
+        // https://www.tracedynamics.com/javascript-split-string-method/
         const table = data.split('\n').slice(1)
         console.log(table)
         table.forEach(row => {
@@ -124,7 +125,7 @@
             ys.push(parseFloat(temp) + 14)
             northern.push(14 + parseFloat(columns[2]));
             southern.push(14 + parseFloat(columns[3]));
-            console.log(year, temp)
+            //console.log(year, temp + 14, parseFloat(temp) + 14)
 
         })
 
