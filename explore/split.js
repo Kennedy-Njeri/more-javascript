@@ -43,3 +43,7 @@ const firstThreeNames = names.split("- ", 3);
 console.log(namesArr) // [ "Kratos", "Atreus", "Freya", "Hela", "Thor", "Odin" ]
 console.log(firstThreeNames); // [ "Kratos", "Atreus", "Freya" ]
 
+const sentence = "Ladies and gentlemen we are floating in space.";
+const words = sentence.split(" "); // Split the sentence on each space between words
+
+console.log(words);
