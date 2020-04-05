@@ -28,7 +28,7 @@ console.log(getHobbiesArray);
 
 var arrayString = "Regular:Expression";
 var myArraySplits = arrayString.split(":");
-console.log(myArraySplits);
+console.log(myArraySplits[0]);
 
 
 const word = "float";
@@ -44,6 +44,25 @@ console.log(namesArr) // [ "Kratos", "Atreus", "Freya", "Hela", "Thor", "Odin" ]
 console.log(firstThreeNames); // [ "Kratos", "Atreus", "Freya" ]
 
 const sentence = "Ladies and gentlemen we are floating in space.";
-const words = sentence.split(" "); // Split the sentence on each space between words
+const words2 = []
+for (let word of sentence.split(" ")) {
+    words2.push(word[0] + word.slice(1))
+}
 
-console.log(words);
+
+console.log(words2)
+
+
+// function capitalize(str) {
+//     const words = []
+//
+//     for (let word of str.split(' ')) {
+//         words.push(word[0].toUpperCase() + word.slice(1))
+//     }
+//
+//     return console.log(words.join(" "))
+// }
+//
+// let word1 = "a short sentence"
+//
+// capitalize(word1)
